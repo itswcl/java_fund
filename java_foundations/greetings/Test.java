@@ -6,3 +6,6 @@ public class Test {
         System.out.println("Hello World!");
     }
 }
+
+// after code, always run "javac" in terminal as java compile
+// run file with "java" + file name
