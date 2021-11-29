@@ -25,10 +25,17 @@ public class CafeUtil {
         return sum;
     }
 
+    // void displayMenu(ArrayList<String> menuItems)
+    public void displayMenu(ArrayList<String> menuItems) {
+        for (int i = 0; i < menuItems.size(); i++) {
+            // System.out.println(i + " " + menuItems.get(i));
+            System.out.println(String.format("%s %s", i, menuItems.get(i)));
+        }
+    }
+
     // printPriceChart
 
 
-    // void displayMenu(ArrayList<String> menuItems)
 
 
     // addCustomer(ArrayList<String>)
