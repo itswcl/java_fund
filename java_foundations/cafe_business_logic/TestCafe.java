@@ -32,11 +32,11 @@ public class TestCafe {
         appTest.displayMenu(menu);
 
         System.out.println("\n----- Add Customer Test-----");
-        // ArrayList<String> customers = new ArrayList<String>();
-        // // --- Test 4 times ---
-        // for (int i = 0; i < 4; i++) {
-        //     appTest.addCustomer(customers);
-        //     System.out.println("\n");
-        // }
+        ArrayList<String> customers = new ArrayList<String>();
+        // --- Test 4 times ---
+        for (int i = 0; i < 4; i++) {
+            appTest.addCustomer(customers);
+            System.out.println("\n");
+        }
     }
 }
