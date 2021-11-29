@@ -5,12 +5,12 @@ import java.util.Arrays;
 public class CafeUtil {
 
     // int getStreakGoal()
-    public int getStreakGoal() {
+    public int getStreakGoal(int week) {
         int sum = 0;
-        int week = 0;
-        while (week <= 10) {
-            sum += week;
-            week++;
+        int weekCount = 0;
+        while (weekCount <= (10 - week)) {
+            sum += weekCount;
+            weekCount++;
         }
         return sum;
     }
