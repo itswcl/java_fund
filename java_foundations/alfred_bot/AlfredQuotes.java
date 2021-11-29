@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.text.*;
 public class AlfredQuotes {
 
     public String basicGreeting() {
@@ -6,10 +7,28 @@ public class AlfredQuotes {
     }
 
 
-    public String guestGreeting(String name) {
+    public String guestGreeting() {
         // your code here
         // return "place holder for guest greeting return string";
-        return String.format("Hello, %s. Lovely to see you.", name);
+        return String.format("Hello, %s. Lovely to see you.");
+    }
+
+
+    public String guestGreeting(String name) {
+        Date date = new Date();
+        // int hour = date.getHours() + 1; // this will get hour from 1 - 24
+
+        SimpleDateFormat hourFormat = new SimpleDateFormat("HH");
+        int currentHour = Integer.parseInt(hourFormat.format(date));
+        // condition
+        if (currentHour >= 4 && currentHour <= 11) {
+            return "Good Morning, " + name + ". Lovely to see you.";
+        } else if (currentHour > 11 && currentHour <= 5) {
+            return "Good Afternoon, " + name + ". Lovely to see you.";
+        } else {
+            return "Good Evening, " + name + ". Lovely to see you.";
+        }
+        // return date;
     }
 
 
@@ -32,6 +51,9 @@ public class AlfredQuotes {
         }
     }
 
+    public String yelling(String statement) {
+        return statement.toUpperCase();
+    }
     // NINJA BONUS
 	// See the specs to overload the guessGreeting method
 

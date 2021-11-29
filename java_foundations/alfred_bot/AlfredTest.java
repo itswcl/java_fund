@@ -5,7 +5,8 @@ public class AlfredTest {
         AlfredQuotes alfredBot = new AlfredQuotes();
 
         String testGreeting = alfredBot.basicGreeting();
-        String testGuestGreeting = alfredBot.guestGreeting("Wei");
+        String testGuestGreeting = alfredBot.guestGreeting("Beth Kane");
+        String testGuestGreetingWithDayPeriod = alfredBot.guestGreeting("Beth Kane");
         String testDateAnnouncement = alfredBot.dateAnnouncement();
 
         String alexisTest = alfredBot.respondBeforeAlexis(
@@ -20,11 +21,17 @@ public class AlfredTest {
             "Maybe that's what Batman is about. Not winning. But failing.."
                             );
 
+        String yellTest = alfredBot.yelling(
+            "we just testing yelling if bot going crazy"
+        );
+
         System.out.println(testGreeting);
         System.out.println(testGuestGreeting);
         System.out.println(testDateAnnouncement);
         System.out.println(alexisTest);
         System.out.println(alfredTest);
         System.out.println(notRelevantTest);
+        System.out.println(testGuestGreetingWithDayPeriod);
+        System.out.println(yellTest);
     }
 }
