@@ -13,7 +13,16 @@ public class TestCafe {
         /* ============ App Test Cases ============= */
 
         System.out.println("\n----- Streak Goal Test -----");
-        System.out.printf("Purchases needed by week 10: %s \n\n", appTest.getStreakGoal());
+        System.out.printf("Purchases needed by week 1: %s \n\n", appTest.getStreakGoal(1));
+        System.out.printf("Purchases needed by week 2: %s \n\n", appTest.getStreakGoal(2));
+        System.out.printf("Purchases needed by week 3: %s \n\n", appTest.getStreakGoal(3));
+        System.out.printf("Purchases needed by week 4: %s \n\n", appTest.getStreakGoal(4));
+        System.out.printf("Purchases needed by week 5: %s \n\n", appTest.getStreakGoal(5));
+        System.out.printf("Purchases needed by week 6: %s \n\n", appTest.getStreakGoal(6));
+        System.out.printf("Purchases needed by week 7: %s \n\n", appTest.getStreakGoal(7));
+        System.out.printf("Purchases needed by week 8: %s \n\n", appTest.getStreakGoal(8));
+        System.out.printf("Purchases needed by week 9: %s \n\n", appTest.getStreakGoal(9));
+        System.out.printf("Purchases needed by week 10: %s \n\n", appTest.getStreakGoal(10));
 
         System.out.println("----- Order ¡Total Test-----");
         double[] lineItems = {3.5, 1.5, 4.0, 4.5};
