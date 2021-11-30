@@ -1,22 +1,26 @@
 public class HighLevelTest {
     public static void main(String[] args) {
-        HighLevel bike = new HighLevel();
-        HighLevel car = new HighLevel();
+        HighLevel redCar = new HighLevel("red");
+        String color = redCar.getColor();
+        System.out.println("this car is " + color);
 
-        bike.setNumberOfWheels(2);
-        bike.setColor("red");
+        // HighLevel bike = new HighLevel();
+        // HighLevel car = new HighLevel();
 
-        int bikeWheels = bike.getNumberOfWheels();
-        String bikeColor = bike.getColor();
+        // bike.setNumberOfWheels(2);
+        // bike.setColor("red");
 
-        car.setNumberOfWheels(4);
-        car.setColor("blue");
+        // int bikeWheels = bike.getNumberOfWheels();
+        // String bikeColor = bike.getColor();
 
-        int carWheels = car.getNumberOfWheels();
-        String carColor = car.getColor();
+        // car.setNumberOfWheels(4);
+        // car.setColor("blue");
 
-        System.out.println("Bike - Wheels " + bikeWheels + " Color " + bikeColor);
-        System.out.println("Car - Wheels " + carWheels + " Color " + carColor);
+        // int carWheels = car.getNumberOfWheels();
+        // String carColor = car.getColor();
+
+        // System.out.println("Bike - Wheels " + bikeWheels + " Color " + bikeColor);
+        // System.out.println("Car - Wheels " + carWheels + " Color " + carColor);
 
     }
 }
