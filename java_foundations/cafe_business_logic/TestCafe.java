@@ -73,11 +73,6 @@ public class TestCafe {
         ArrayList<Double> price = new ArrayList<Double>();
         price.addAll(loadPrices);
 
-        if (appTest.displayMenu(menu, price)) {
-            for (int i = 0; i < menu.size(); i++) {
-                // System.out.println(i + " " + menu.get(i) + " -- $" + price.get(i));
-                System.out.println(String.format("%d %s -- $%.2f", i, menu.get(i), price.get(i)));
-            }
-        };
+        appTest.displayMenu(menu, price);
     }
 }

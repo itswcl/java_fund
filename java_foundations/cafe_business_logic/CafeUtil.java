@@ -45,6 +45,12 @@ public class CafeUtil {
         System.out.println(customers);
     }
 
+    // addCustomers(ArrayList<String>)
+    public void addCustomers(ArrayList<String> custoemrs) {
+        System.out.println("Please enter your name and other's name:");
+        String userName = System.console().readLine();
+    }
+
     // void printPriceChart(String product, double price, int maxQuantity)
     public void printPriceChart(String product, double price, int maxQuantity) {
         System.out.println(product);
@@ -55,6 +61,12 @@ public class CafeUtil {
 
     // boolean displayMenu(ArrayList<String> menuItems, ArrayList<Double> prices)
     public boolean displayMenu(ArrayList<String> menuItems, ArrayList<Double> prices) {
+        if (menuItems.size() == prices.size()) {
+            for (int i = 0; i < menuItems.size(); i++) {
+                // System.out.println(i + " " + menu.get(i) + " -- $" + price.get(i));
+                System.out.println(String.format("%d %s -- $%.2f", i, menuItems.get(i), prices.get(i)));
+            }
+        }
         return menuItems.size() == prices.size();
     }
 }
