@@ -2,8 +2,17 @@ public class HighLevel {
     private int numberOfWheels;
     private String color;
 
+    public HighLevel() {
+
+    }
+
     public HighLevel(String color) {
         this.color = color;
+    }
+
+    public HighLevel(String color, int num) {
+        this.color = color;
+        this.numberOfWheels = num;
     }
 
     // // getter
