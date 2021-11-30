@@ -24,5 +24,14 @@ public class TestPuzzle {
         System.out.println("Random Password Set: " + appTest.getNewPasswordSet(5));
 
 
+        System.out.println("\n -------- Shuffle Array Test -------");
+        ArrayList<String> words = new ArrayList<String>();
+        words.add(appTest.generatePassword());
+        words.add(appTest.generatePassword());
+        words.add(appTest.generatePassword());
+
+        System.out.println("Original Array: " + words);
+        System.out.println("shuffle Array: " + appTest.shuffleArray(words));
+
     }
 }

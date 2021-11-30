@@ -59,4 +59,17 @@ public class PuzzleJava {
 
         return result;
     }
+
+    public ArrayList<String> shuffleArray(ArrayList<String> words) {
+        ArrayList<String> list = new ArrayList<String>();
+
+        int upperBound = words.size();
+
+        for (int i = 0; i < upperBound; i++) {
+            int randNum = randMachine.nextInt(upperBound);
+            list.add(i, words.get(randNum));
+        }
+
+        return list;
+    }
 }
