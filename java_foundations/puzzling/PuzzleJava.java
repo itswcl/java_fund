@@ -6,15 +6,16 @@ import java.util.List;
 
 public class PuzzleJava {
 
-    Random randMachine = new Random();
 
     public ArrayList<Integer> getTenRolls(int number) {
+
         ArrayList<Integer> list = new ArrayList<Integer>();
 
+        Random randMachine = new Random();
 
         for (int i = 0; i < 10; i ++) {
-            int upperBound = 21;
-            int randNum = randMachine.nextInt(upperBound) + 1;
+            // int upperBound = 21;
+            int randNum = randMachine.nextInt(20) + 1;
 
             list.add(randNum);
         }
@@ -24,6 +25,7 @@ public class PuzzleJava {
 
     public Character getRandomLetter() {
         ArrayList<Character> letterList = new ArrayList<Character>();
+        Random randMachine = new Random();
 
         List<Character> letters = Arrays.asList(
             'a','b','c','d','e','f','g','h','i','j','k',
@@ -36,6 +38,12 @@ public class PuzzleJava {
         int randNum = randMachine.nextInt(upperBound);
 
         return letterList.get(randNum);
+
+
+        // Random rand = new Random();
+        // String alphString = "abcdefghijklmnopqrstuvwxyz";
+        // char randomChar = alphString.charAt(rand.nextInt(26));
+        // return String.valueOf(randomChar);
     }
 
 
@@ -62,6 +70,7 @@ public class PuzzleJava {
 
     public ArrayList<String> shuffleArray(ArrayList<String> words) {
         ArrayList<String> list = new ArrayList<String>();
+        Random randMachine = new Random();
 
         int upperBound = words.size();
 
