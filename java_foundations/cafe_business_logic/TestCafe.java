@@ -13,16 +13,16 @@ public class TestCafe {
         /* ============ App Test Cases ============= */
 
         System.out.println("\n----- Streak Goal Test -----");
-        System.out.printf("Purchases needed by week 1: %s \n\n", appTest.getStreakGoal(1));
-        System.out.printf("Purchases needed by week 2: %s \n\n", appTest.getStreakGoal(2));
-        System.out.printf("Purchases needed by week 3: %s \n\n", appTest.getStreakGoal(3));
-        System.out.printf("Purchases needed by week 4: %s \n\n", appTest.getStreakGoal(4));
-        System.out.printf("Purchases needed by week 5: %s \n\n", appTest.getStreakGoal(5));
-        System.out.printf("Purchases needed by week 6: %s \n\n", appTest.getStreakGoal(6));
-        System.out.printf("Purchases needed by week 7: %s \n\n", appTest.getStreakGoal(7));
-        System.out.printf("Purchases needed by week 8: %s \n\n", appTest.getStreakGoal(8));
-        System.out.printf("Purchases needed by week 9: %s \n\n", appTest.getStreakGoal(9));
-        System.out.printf("Purchases needed by week 10: %s \n\n", appTest.getStreakGoal(10));
+        System.out.printf("Purchases needed by week 10: %s \n\n", appTest.getStreakGoal(1));
+        System.out.printf("Purchases needed by week 9: %s \n\n", appTest.getStreakGoal(2));
+        System.out.printf("Purchases needed by week 8: %s \n\n", appTest.getStreakGoal(3));
+        System.out.printf("Purchases needed by week 7: %s \n\n", appTest.getStreakGoal(4));
+        System.out.printf("Purchases needed by week 6: %s \n\n", appTest.getStreakGoal(5));
+        System.out.printf("Purchases needed by week 5: %s \n\n", appTest.getStreakGoal(6));
+        System.out.printf("Purchases needed by week 4: %s \n\n", appTest.getStreakGoal(7));
+        System.out.printf("Purchases needed by week 3: %s \n\n", appTest.getStreakGoal(8));
+        System.out.printf("Purchases needed by week 2: %s \n\n", appTest.getStreakGoal(9));
+        System.out.printf("Purchases needed by week 1: %s \n\n", appTest.getStreakGoal(10));
 
         System.out.println("----- Order ¡Total Test-----");
         double[] lineItems = {3.5, 1.5, 4.0, 4.5};
@@ -47,5 +47,37 @@ public class TestCafe {
             appTest.addCustomer(customers);
             System.out.println("\n");
         }
+
+
+        System.out.println("\n----- Print Price Chart Test-----");
+        appTest.printPriceChart("Columbian Coffee Grounds", 15, 3);
+
+
+        System.out.println("\n----- Display Menu Test with overload-----");
+
+        // List<String> loadMenu = Arrays.asList(
+        //     "drip coffee",
+        //     "cappucino",
+        //     "latte",
+        //     "mocha"
+        // );
+        // ArrayList<String> menu = new ArrayList<String>();
+        // menu.addAll(loadMenu);
+
+        List<Double> loadPrices = Arrays.asList(
+            1.50,
+            3.50,
+            4.50,
+            3.50
+        );
+        ArrayList<Double> price = new ArrayList<Double>();
+        price.addAll(loadPrices);
+
+        if (appTest.displayMenu(menu, price)) {
+            for (int i = 0; i < menu.size(); i++) {
+                // System.out.println(i + " " + menu.get(i) + " -- $" + price.get(i));
+                System.out.println(String.format("%d %s -- $%.2f", i, menu.get(i), price.get(i)));
+            }
+        };
     }
 }

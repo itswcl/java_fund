@@ -45,5 +45,16 @@ public class CafeUtil {
         System.out.println(customers);
     }
 
+    // void printPriceChart(String product, double price, int maxQuantity)
+    public void printPriceChart(String product, double price, int maxQuantity) {
+        System.out.println(product);
+        for (int i = 1; i <= maxQuantity; i++) {
+            System.out.println(i + " - $" + (i * price - ((i - 1) * 0.5)));
+        }
+    }
 
+    // boolean displayMenu(ArrayList<String> menuItems, ArrayList<Double> prices)
+    public boolean displayMenu(ArrayList<String> menuItems, ArrayList<Double> prices) {
+        return menuItems.size() == prices.size();
+    }
 }
