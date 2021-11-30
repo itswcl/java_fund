@@ -49,4 +49,14 @@ public class PuzzleJava {
         }
         return result;
     }
+
+    public ArrayList<String> getNewPasswordSet(int numberOfSet) {
+        ArrayList<String> result = new ArrayList<String>();
+
+        for (int i = 0; i < numberOfSet; i++) {
+            result.add(generatePassword());
+        }
+
+        return result;
+    }
 }

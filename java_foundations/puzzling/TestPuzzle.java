@@ -19,5 +19,10 @@ public class TestPuzzle {
         System.out.println("\n -------- GeneratePassword Test -------");
         System.out.println("Random Password: " + appTest.generatePassword());
 
+
+        System.out.println("\n -------- Get New Password Set Test -------");
+        System.out.println("Random Password Set: " + appTest.getNewPasswordSet(5));
+
+
     }
 }
