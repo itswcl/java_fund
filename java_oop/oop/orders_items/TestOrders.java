@@ -39,6 +39,18 @@ public class TestOrders {
         System.out.printf("Name: %s\n", order1.getOrderName());
         System.out.printf("Total: %s\n", order1.getOrderTotal());
         System.out.printf("Ready: %s\n", order1.getOrderReady());
+
+        System.out.printf("Name: %s\n", order2.getOrderName());
         System.out.printf("Total: %s\n", order2.getOrderTotal());
+        System.out.printf("Ready: %s\n", order2.getOrderReady());
+
+        System.out.printf("Name: %s\n", order3.getOrderName());
+        System.out.printf("Total: %s\n", order3.getOrderTotal());
+        System.out.printf("Ready: %s\n", order3.getOrderReady());
+
+        System.out.printf("Name: %s\n", order4.getOrderName());
+        System.out.printf("Total: %s\n", order4.getOrderTotal());
+        System.out.printf("Ready: %s\n", order4.getOrderReady());
+
     }
 }
