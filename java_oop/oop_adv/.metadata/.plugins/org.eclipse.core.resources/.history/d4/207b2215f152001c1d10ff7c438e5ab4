@@ -1,0 +1,5 @@
+package com.wei.interface_implementation;
+
+public interface ACPowerable {
+
+}
