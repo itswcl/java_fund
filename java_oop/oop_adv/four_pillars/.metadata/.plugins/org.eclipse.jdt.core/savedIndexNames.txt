@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+/Users/Waayyne/Desktop/Java/java_oop/oop_adv/four_pillars/.metadata/.plugins/org.eclipse.jdt.core
+453156965.index
+2333669820.index
+1865797976.index
