@@ -2,15 +2,60 @@ import java.util.ArrayList;
 
 public class Order {
     private String name;
-    private double total;
+    // private double total;
     private boolean ready;
-    public ArrayList<Item> items = new ArrayList<Item>();
+    private ArrayList<Item> items;
 
-
-    public Order (String orderName) {
-        setOrderName(orderName);
+    // Constructor without argument
+    public Order () {
+        setOrderName("Guest");
+        setOrderItems();
     }
 
+
+    // Overloaded constructor
+    public Order (String name) {
+        setOrderName(name);
+        setOrderItems();
+    }
+
+
+    // Order Methods
+    public void addItem(Item item) {
+        items.add(item);
+    }
+
+    public String getStatusMessage() {
+        if (getOrderReady() == true) {
+            return "Your order is ready.";
+        } else {
+            return "Thank you for waiting. Your order will be ready soon.";
+        }
+    }
+
+    public int getOrderTotal() {
+        int total = 0;
+        for (int i = 0; i < items.size(); i++) {
+            total += items.get(i).getItemPrice();
+        }
+        return total;
+    }
+
+    public void display() {
+        System.out.println(getOrderName());
+
+        for (int i = 0; i < items.size(); i++) {
+            String itemName = items.get(i).getItemName();
+            double itemPrice = items.get(i).getItemPrice();
+
+            System.out.println(itemName + " - " + itemPrice);
+        }
+
+        System.out.println("Total: $" + getOrderTotal());
+    }
+
+
+    // setter / getter
     // set order name
     public void setOrderName(String orderName) {
         this.name = orderName;
@@ -21,17 +66,17 @@ public class Order {
     }
 
 
-    // set order total
-    public void setOrderTotal() {
-        // this.total = 0;
-        for (int i = 0; i < items.size(); i++) {
-            this.total += items.get(i).getItemPrice();
-        }
-    }
-    // get order total
-    public double getOrderTotal() {
-        return this.total;
-    }
+    // // set order total
+    // public void setOrderTotal() {
+    //     // this.total = 0;
+    //     for (int i = 0; i < items.size(); i++) {
+    //         this.total += items.get(i).getItemPrice();
+    //     }
+    // }
+    // // get order total
+    // public double getOrderTotal() {
+    //     return this.total;
+    // }
 
 
     // set ready
@@ -44,12 +89,12 @@ public class Order {
     }
 
 
-    // // set items
-    // public void setOrderItems(ArrayList<Object> item) {
-    //     this.items.add(new );
-    // }
-    // // get items
-    // public ArrayList<Object> getOrderItems() {
-    //     return items;
-    // }
+    // set items
+    public void setOrderItems() {
+        this.items = new ArrayList<Item>();
+    }
+    // get items
+    public ArrayList<Item> getOrderItems() {
+        return items;
+    }
 }
