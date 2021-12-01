@@ -1,0 +1,9 @@
+package com.wei.annotation;
+
+public class Developer extends Human {
+	
+//	@Override
+	public String getname() {
+		return "Developer!";
+	}
+}
