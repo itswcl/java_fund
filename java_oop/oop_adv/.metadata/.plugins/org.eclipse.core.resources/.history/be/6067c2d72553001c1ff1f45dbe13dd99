@@ -1,0 +1,5 @@
+package com.wei.abstractArt;
+
+public abstract class Art {
+
+}

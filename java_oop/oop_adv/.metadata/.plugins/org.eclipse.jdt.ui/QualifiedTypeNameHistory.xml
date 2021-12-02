@@ -2,6 +2,9 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="zoo_keeper.Gorilla"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.lang.Void"/>
+    <fullyQualifiedTypeName name="com.wei.abstractlect.ClassDemo"/>
+    <fullyQualifiedTypeName name="com.wei.abstractArt.Sculpture"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

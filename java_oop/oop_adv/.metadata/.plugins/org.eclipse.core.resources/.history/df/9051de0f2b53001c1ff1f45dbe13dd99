@@ -1,0 +1,11 @@
+package com.wei.abstractArt;
+
+public class Sculpture extends Art {
+
+	@Override
+	public void viewArt() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

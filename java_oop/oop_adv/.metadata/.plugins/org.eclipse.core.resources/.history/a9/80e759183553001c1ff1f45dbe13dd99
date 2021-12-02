@@ -1,0 +1,15 @@
+package com.wei.abstractArt;
+
+public class Museum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Painting paintOne = new Painting();
+		Painting paintTwo = new Painting();
+		Painting paintThree = new Painting();
+		Sculpture sculptureOne = new Sculpture();
+		Sculpture sculptureTwo = new Sculpture();
+		
+	}
+
+}

@@ -1,0 +1,27 @@
+package com.wei.abstractArt;
+
+import java.util.ArrayList;
+
+public class Museum {
+	
+	public static ArrayList<Art> museum = new ArrayList<Art> ();
+	
+	public Museum(ArrayList<Art> museum) {
+		Museum.museum = museum;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Painting paintOne = new Painting();
+		Painting paintTwo = new Painting();
+		Painting paintThree = new Painting();
+		Sculpture sculptureOne = new Sculpture();
+		Sculpture sculptureTwo = new Sculpture();
+		
+		museum.add(paintOne);
+		for (int i = 0; i < museum.size(); i++) {
+			System.out.println(museum.get(i));
+		}
+	}
+
+}

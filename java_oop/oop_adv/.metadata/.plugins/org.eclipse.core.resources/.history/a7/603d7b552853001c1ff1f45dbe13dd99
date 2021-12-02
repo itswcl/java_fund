@@ -1,0 +1,5 @@
+package com.wei.abstractArt;
+
+public class Painting extends Art {
+
+}
