@@ -3,43 +3,52 @@ import java.util.ArrayList;
 public class TestOrders {
     public static void main(String[] args) {
 
+        CoffeeKiosk kiosk = new CoffeeKiosk();
+
+        kiosk.addMenuItem(0, "mocha", 4.5);
+        kiosk.addMenuItem(1, "latte", 5);
+        kiosk.addMenuItem(2, "drip coffee", 2);
+        kiosk.addMenuItem(3, "cappuccino", 4);
+
+        // kiosk.displayMenu();
+        kiosk.newOrder();
         // Menu items
-        Item item1 = new Item("mocha", 4.5);
-        Item item2 = new Item("latte", 5);
-        Item item3 = new Item("drip coffee", 2);
-        Item item4 = new Item("cappuccino", 4);
+        // Item item1 = new Item("mocha", 4.5);
+        // Item item2 = new Item("latte", 5);
+        // Item item3 = new Item("drip coffee", 2);
+        // Item item4 = new Item("cappuccino", 4);
         // System.out.println(item1.getItemName());
         // System.out.println(item1.getItemPrice());
 
-        Order order1 = new Order();
-        order1.addItem(item1);
-        order1.addItem(item2);
+        // Order order1 = new Order();
+        // order1.addItem(item1);
+        // order1.addItem(item2);
 
-        Order order2 = new Order();
-        order2.addItem(item3);
-        order2.addItem(item4);
+        // Order order2 = new Order();
+        // order2.addItem(item3);
+        // order2.addItem(item4);
 
-        Order order3 = new Order("Jimmy");
-        order3.addItem(item1);
-        order3.addItem(item3);
+        // Order order3 = new Order("Jimmy");
+        // order3.addItem(item1);
+        // order3.addItem(item3);
 
-        Order order4 = new Order("Noah");
-        order4.addItem(item2);
-        order4.addItem(item4);
+        // Order order4 = new Order("Noah");
+        // order4.addItem(item2);
+        // order4.addItem(item4);
 
-        Order order5 = new Order("Sam");
-        order5.addItem(item1);
-        order5.addItem(item4);
+        // Order order5 = new Order("Sam");
+        // order5.addItem(item1);
+        // order5.addItem(item4);
 
-        System.out.println("------ get Status Message test ------");
-        order2.setOrderReady(true);
-        System.out.println(order2.getStatusMessage());
+        // System.out.println("------ get Status Message test ------");
+        // order2.setOrderReady(true);
+        // System.out.println(order2.getStatusMessage());
 
-        System.out.println("\n------ get order total test ------");
-        System.out.println(order1.getOrderTotal());
+        // System.out.println("\n------ get order total test ------");
+        // System.out.println(order1.getOrderTotal());
 
-        System.out.println("\n------ display test ------");
-        order3.display();
+        // System.out.println("\n------ display test ------");
+        // order3.display();
 
         // Order variables -- order1, order2 etc.
         // Order order1 = new Order("Cindhuri");

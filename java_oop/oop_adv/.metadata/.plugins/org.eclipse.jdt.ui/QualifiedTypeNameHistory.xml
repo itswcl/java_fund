@@ -7,4 +7,5 @@
     <fullyQualifiedTypeName name="com.wei.abstractlect.ClassDemo"/>
     <fullyQualifiedTypeName name="com.wei.abstractArt.Sculpture"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>

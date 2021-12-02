@@ -2,10 +2,12 @@
 public class Item {
     private String name;
     private double price;
+    private int index;
 
-    public Item (String name, double price) {
+    public Item (int index, String name, double price) {
         setItemName(name);
         setItemPrice(price);
+        setIndex(index);
     }
 
     // Setter and Getter
@@ -28,5 +30,13 @@ public class Item {
         return price;
     }
 
+
+    public void setIndex(int index) {
+        this.index = index;
+    }
+
+    public int getIndex() {
+        return index;
+    }
 
 }
