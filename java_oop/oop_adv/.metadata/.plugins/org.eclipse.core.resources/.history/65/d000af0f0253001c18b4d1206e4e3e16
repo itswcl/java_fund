@@ -1,0 +1,7 @@
+package com.wei.models;
+
+import com.wei.caresoft_interfaces.HIPAACompliantUser;
+
+public class Physician extends User implements HIPAACompliantUser {
+
+}

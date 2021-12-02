@@ -1,0 +1,27 @@
+package com.wei.models;
+
+import java.util.ArrayList;
+
+import com.wei.caresoft_interfaces.HIPAACompliantAdmin;
+import com.wei.caresoft_interfaces.HIPAACompliantUser;
+
+public class AdminUser extends User implements HIPAACompliantUser, HIPAACompliantAdmin {
+
+	public AdminUser(Integer id, int pin) {
+		super(id, pin);
+	}
+
+	public boolean accessAuthorized(Integer confirmedAuthID) {
+		return false;
+	}
+
+	public boolean assignPin(int pin) {
+		return false;
+	}
+
+	public ArrayList<String> reportSecurityIncidents() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

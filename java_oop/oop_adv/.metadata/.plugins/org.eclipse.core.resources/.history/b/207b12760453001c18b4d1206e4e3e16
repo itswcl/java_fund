@@ -1,0 +1,5 @@
+package com.wei.caresoft_interfaces;
+
+public interface HIPAACompliantAdmin {
+
+}

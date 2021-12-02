@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-    <typeInfo handle="=Interface_implementation/src&lt;com.wei.interface_implementation{ACPowerable.java[ACPowerable" modifiers="513" timestamp="1638397579000"/>
+    <typeInfo handle="=Interface_implementation/src&lt;com.wei.interface_implementation{ACPowerable.java[ACPowerable" modifiers="513" timestamp="1638399493000"/>
+    <typeInfo handle="=annotation/src&lt;com.wei.annotation{Human.java[Human" modifiers="1" timestamp="1638400637000"/>
+    <typeInfo handle="=caresoft_interfaces/src&lt;com.wei.models{User.java[User" modifiers="1" timestamp="1638401685000"/>
+    <typeInfo handle="=caresoft_interfaces/src&lt;com.wei.caresoft_interfaces{HIPAACompliantUser.java[HIPAACompliantUser" modifiers="513" timestamp="1638401401000"/>
 </typeInfoHistroy>

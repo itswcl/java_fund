@@ -1,0 +1,13 @@
+package com.wei.models;
+
+import com.wei.caresoft_interfaces.HIPAACompliantAdmin;
+import com.wei.caresoft_interfaces.HIPAACompliantUser;
+
+public class AdminUser extends User implements HIPAACompliantUser, HIPAACompliantAdmin {
+
+	public AdminUser(Integer id, int pin) {
+		super(id, pin);
+		// TODO Auto-generated constructor stub
+	}
+
+}

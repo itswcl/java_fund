@@ -1,0 +1,39 @@
+package com.wei.models;
+
+import java.util.ArrayList;
+
+import com.wei.caresoft_interfaces.HIPAACompliantUser;
+
+public class Physician extends User implements HIPAACompliantUser {
+	
+	private ArrayList<String> patientNotes;
+	
+
+	public Physician(Integer id, int pin) {
+		super(id, pin);
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	public boolean assignPin(int pin) {
+		String pinString = String.valueOf(pin);
+		
+		if (pinString.length() == 4) {
+			super.setPin(pin);
+			return true;
+		}
+		return false;
+	}
+	
+	
+	public boolean accessAuthorized(Integer confirmedAuthID) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	public void newPatientNotes(String notes, String patientName, Date data) {
+		
+	}
+
+}
