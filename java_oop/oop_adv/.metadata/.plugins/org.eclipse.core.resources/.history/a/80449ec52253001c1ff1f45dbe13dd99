@@ -1,0 +1,17 @@
+package com.wei.abstractlect;
+
+public class AbstractDmo implements InterfaceDemo {
+
+	@Override
+	public void methodOne() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void methodTwo() {
+		// TODO Auto-generated method stub
+
+	}
+
+}
