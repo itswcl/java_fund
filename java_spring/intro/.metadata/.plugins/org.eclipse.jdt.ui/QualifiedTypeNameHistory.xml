@@ -8,4 +8,6 @@
     <fullyQualifiedTypeName name="com.fasterxml.jackson.core.sym.Name"/>
     <fullyQualifiedTypeName name="javax.el.BeanNameELResolver"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="javax.websocket.server.PathParam"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 </qualifiedTypeNameHistroy>
